@@ -9,6 +9,7 @@ import scrapy
 
 
 class MyspiderItem(scrapy.Item):
+    img_url = scrapy.Field()
     name = scrapy.Field()
     level = scrapy.Field()
     info = scrapy.Field()
