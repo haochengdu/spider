@@ -69,7 +69,8 @@ ROBOTSTXT_OBEY = False
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'mySpider.pipelines.MyspiderPipeline': 300,
-    'mySpider.pipelines.TencentPositionPipeline': 310,
+    # 'mySpider.pipelines.TencentPositionPipeline': 310,
+    'mySpider.pipelines.SunHotlinePipeline': 310,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

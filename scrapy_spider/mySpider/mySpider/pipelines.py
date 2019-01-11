@@ -49,19 +49,19 @@ class SunHotlinePipeline(object):
         host_ip = '192.168.2.223'
         port = 27017
         db_name = 'spider'
-        collection_name = 'sunhotline'
+        collection_name = 'sunhotline2'
         self.mongodb = MongoBD(host_ip, port)
         self.collection = self.mongodb.get_collection(db_name, collection_name)
 
     def process_item(self, item, spider):
         if isinstance(item, SunHotlineItem):
             self.collection.insert_one(dict(item))
-            logger.info('存入MongoDB= {}'.format(dict(item)))
+            # logger.info('存入MongoDB= {}'.format(dict(item)))
         return item
 
     def close_spider(self, spider):
         self.mongodb.close()
-        logger.info('爬完毕')
+        logger.info('sunhotline2爬完毕')
 
 
 
