@@ -13,6 +13,6 @@ from scrapy.cmdline import execute
 
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-execute(['scrapy', 'crawl', 'itcast'])
-
-
+# execute(['scrapy', 'crawl', 'itcast'])
+# execute(['scrapy', 'crawl', 'tencent'])
+execute(['scrapy', 'crawl', 'sunhotline'])
